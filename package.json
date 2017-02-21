@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack -d",
-    "lint": "./node_modules/.bin/eslint app/* server.js; exit 0",
-    "start": "nodemon server.js"
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
+    "start": "nodemon server.js",
+    "knex": "./node_modules/.bin/knex"
   },
   "keywords": [],
   "author": "Mrjadaml",
@@ -31,9 +32,12 @@
   },
   "dependencies": {
     "express": "^4.14.0",
+    "knex": "^0.12.6",
     "nodemon": "^1.11.0",
+    "pg": "^6.1.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "styled-components": "^1.4.3",
     "webpack": "^2.2.0",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.15.0"

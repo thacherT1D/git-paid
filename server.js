@@ -21,5 +21,5 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
   /* eslint-disable no-console */
 
-  console.log('on some port');
+  console.log(`Listening on port ${port}`);
 });
